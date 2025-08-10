@@ -20,7 +20,14 @@ const ImageDisplay = () => {
 
   return (
     <div className="image-display">
-      <img src={images[currentIndex]} alt="" />
+      <div class="img-container">
+        <img src={images[currentIndex]} alt="" />
+
+        <span className="image-counter">
+          {currentIndex + 1} / {arrayLength}
+        </span>
+      </div>
+
       <Buttons
         onClickedPrev={() => goToIndex(currentIndex - 1)}
         onClickedNext={() => goToIndex(currentIndex + 1)}
