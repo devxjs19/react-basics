@@ -33,11 +33,24 @@ const images = [
 const ImageDisplay = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const handlePrev = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex((curr) => curr - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentIndex < images.length - 1) {
+      setCurrentIndex((curr) => curr + 1);
+    }
+  };
+
   return (
     <div className="image-display">
-      Image Display
       <img src={images[currentIndex]} alt="" />
-      <Buttons />
+      <Buttons onClickedPrev={handlePrev} onClickedNext={handleNext} />
     </div>
   );
 };
