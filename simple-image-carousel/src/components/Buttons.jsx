@@ -6,6 +6,7 @@ const Buttons = ({ onClickedPrev, onClickedNext }) => {
   return (
     <div class="button-container">
       <Button onClick={onClickedPrev}>Prev</Button>
+
       <Button onClick={onClickedNext}>Next</Button>
     </div>
   );
