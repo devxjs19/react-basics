@@ -1,12 +1,12 @@
-const Button = ({ children }) => {
-  return <button>{children}</button>;
+const Button = ({ children, onClick }) => {
+  return <button onClick={onClick}>{children}</button>;
 };
 
-const Buttons = () => {
+const Buttons = ({ onClickedPrev, onClickedNext }) => {
   return (
     <div class="button-container">
-      <Button>Prev</Button>
-      <Button>Next</Button>
+      <Button onClick={onClickedPrev}>Prev</Button>
+      <Button onClick={onClickedNext}>Next</Button>
     </div>
   );
 };
