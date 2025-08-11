@@ -2,6 +2,10 @@
 
 This project is a basic image gallery (or carousel) built with React. It allows users to navigate through a collection of images using "Previous" and "Next" buttons, providing a simple and intuitive browsing experience.
 
+## 📷 Screenshot
+
+![Screenshot of Simple Image Gallery](./src/assets/screenshot.png)
+
 ## ✨ Features
 
 - Image Display: Shows one image at a time.
