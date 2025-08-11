@@ -20,8 +20,13 @@ const ImageDisplay = () => {
 
   return (
     <div className="image-display">
-      <div class="img-container">
-        <img src={images[currentIndex]} alt="" />
+      <div className="img-container">
+        <img
+          key={currentIndex}
+          className="fade-in-fwd"
+          src={images[currentIndex]}
+          alt=""
+        />
 
         <span className="image-counter">
           {currentIndex + 1} / {arrayLength}
