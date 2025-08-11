@@ -26,7 +26,7 @@ const ShoppingList = () => {
   };
 
   return (
-    <div className="shopping-list">
+    <div className="shopping-list__container">
       <ListInput listItems={listItems} onAddItem={handleAddItem} />
       <ListItems listItems={listItems} onDeleteItem={handleDeleteItem} />
     </div>
