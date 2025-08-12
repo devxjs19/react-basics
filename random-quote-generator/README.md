@@ -2,7 +2,9 @@
 
 This project is a straightforward React application designed to fetch and display random inspirational or thought-provoking quotes. It enhances the user experience by offering text-to-speech functionality and the ability to share quotes effortlessly.
 
----
+## 📷 Screenshot
+
+![Screenshot of Simple Image Gallery](./src/assets/screenshot.png)
 
 ✨ **Features**
 
@@ -13,16 +15,12 @@ This project is a straightforward React application designed to fetch and displa
 - Incorporates loading and error handling states for a smoother user experience
 - Presents a user-friendly interface with clear prompt messages and interactive controls
 
----
-
 🛠️ **Technologies Used**
 
 - **React:** A powerful JavaScript library for building dynamic user interfaces.
 - **Web Fetch API:** For making asynchronous network requests to retrieve quotes.
 - **Web Speech API:** For converting text quotes into spoken audio.
 - **Web Share API:** For native sharing functionality on supported platforms.
-
----
 
 🚀 **Getting Started**
 
