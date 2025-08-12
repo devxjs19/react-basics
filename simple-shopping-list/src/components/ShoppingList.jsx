@@ -20,9 +20,13 @@ const ShoppingList = () => {
   };
 
   const handleDeleteItem = (item) => {
-    const updatedList = listItems.filter((el) => el !== item);
-    setListItems(updatedList);
-    localStorage.setItem("listItems", JSON.stringify(updatedList));
+    if (window.confirm("Are you sure?")) {
+      const updatedList = listItems.filter((el) => el !== item);
+      setListItems(updatedList);
+      localStorage.setItem("listItems", JSON.stringify(updatedList));
+    }
+
+    return;
   };
 
   const handlePackedItem = (item) => {
@@ -40,7 +44,11 @@ const ShoppingList = () => {
   };
 
   const handleClearList = () => {
-    setListItems([]);
+    if (window.confirm("Are you sure?")) {
+      setListItems([]);
+    }
+
+    return;
   };
 
   return (
