@@ -43,7 +43,7 @@ git clone https://github.com/devxjs19/react-basics/tree/main/simple-image-carous
 2. **Navigate into the project directory**:
 
 ```bash
-cd your-project-name
+cd simple-image-carousel
 ```
 
 3. **Install dependencies**:

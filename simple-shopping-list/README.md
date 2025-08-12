@@ -37,13 +37,13 @@ You'll need **Node.js** and **npm** installed on your system.
 1.  **Clone the repository:** (If you have a Git repository for this project)
 
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/devxjs19/react-basics/tree/main/simple-shopping-list
     ```
 
 2.  **Navigate into the project directory:**
 
     ```bash
-    cd your-project-name
+    cd simple-shopping-list
     ```
 
 3.  **Install dependencies:**
