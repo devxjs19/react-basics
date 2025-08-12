@@ -20,7 +20,10 @@ body {
 }
 
 h1 {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   margin: 2rem auto;
   color: #fff;
 }
@@ -44,6 +47,11 @@ button {
   background-color: #fef4f3;
   border-radius: 16px;
   padding: 1rem;
+}
+
+.shopping-list__container p {
+  text-align: center;
+  font-size: 1.125rem;
 }
 
 /* ==========

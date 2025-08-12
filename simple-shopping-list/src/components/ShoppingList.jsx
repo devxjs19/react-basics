@@ -42,11 +42,15 @@ const ShoppingList = () => {
   return (
     <div className="shopping-list__container">
       <ListInput listItems={listItems} onAddItem={handleAddItem} />
-      <ListItems
-        listItems={listItems}
-        onPackedItem={handlePackedItem}
-        onDeleteItem={handleDeleteItem}
-      />
+      {listItems.length === 0 ? (
+        <p>Add items to your list</p>
+      ) : (
+        <ListItems
+          listItems={listItems}
+          onPackedItem={handlePackedItem}
+          onDeleteItem={handleDeleteItem}
+        />
+      )}
     </div>
   );
 };
