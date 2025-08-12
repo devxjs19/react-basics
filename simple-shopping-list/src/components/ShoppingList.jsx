@@ -39,17 +39,26 @@ const ShoppingList = () => {
     setListItems(updatedList);
   };
 
+  const handleClearList = () => {
+    setListItems([]);
+  };
+
   return (
     <div className="shopping-list__container">
       <ListInput listItems={listItems} onAddItem={handleAddItem} />
       {listItems.length === 0 ? (
         <p>Add items to your list</p>
       ) : (
-        <ListItems
-          listItems={listItems}
-          onPackedItem={handlePackedItem}
-          onDeleteItem={handleDeleteItem}
-        />
+        <>
+          <ListItems
+            listItems={listItems}
+            onPackedItem={handlePackedItem}
+            onDeleteItem={handleDeleteItem}
+          />
+          <button onClick={handleClearList} className="clear-list-btn">
+            Clear List
+          </button>
+        </>
       )}
     </div>
   );
