@@ -2,25 +2,29 @@ import { useState } from "react";
 import { IoMdAddCircleOutline } from "react-icons/io";
 
 const ListInput = ({ listItems, onAddItem }) => {
-  const [newItem, setNewItem] = useState("");
+  const [newItem, setNewItem] = useState({ name: "", packed: false });
+
+  const handleSumbit = (e) => {
+    e.preventDefault();
+
+    if (
+      newItem.name.trim() !== "" &&
+      !listItems.some((item) => item.name === newItem.name)
+    ) {
+      onAddItem(newItem);
+    }
+
+    setNewItem({ name: "", packed: false });
+  };
 
   return (
-    <form
-      className="list-form"
-      onSubmit={(e) => {
-        e.preventDefault();
-
-        if (newItem !== "" && !listItems.includes(newItem)) {
-          onAddItem(newItem);
-        }
-
-        setNewItem("");
-      }}
-    >
+    <form className="list-form" onSubmit={handleSumbit}>
       <input
         type="text"
-        value={newItem}
-        onChange={(e) => setNewItem(e.target.value)}
+        value={newItem.name}
+        onChange={(e) =>
+          setNewItem((prev) => ({ ...prev, name: e.target.value }))
+        }
         placeholder="Add Item"
       />
       <button>

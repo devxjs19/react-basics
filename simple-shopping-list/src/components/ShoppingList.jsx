@@ -25,10 +25,28 @@ const ShoppingList = () => {
     localStorage.setItem("listItems", JSON.stringify(updatedList));
   };
 
+  const handlePackedItem = (item) => {
+    const updatedList = listItems.map((el) => {
+      if (el.name === item.name) {
+        return {
+          ...el,
+          packed: !el.packed,
+        };
+      }
+      return el;
+    });
+
+    setListItems(updatedList);
+  };
+
   return (
     <div className="shopping-list__container">
       <ListInput listItems={listItems} onAddItem={handleAddItem} />
-      <ListItems listItems={listItems} onDeleteItem={handleDeleteItem} />
+      <ListItems
+        listItems={listItems}
+        onPackedItem={handlePackedItem}
+        onDeleteItem={handleDeleteItem}
+      />
     </div>
   );
 };

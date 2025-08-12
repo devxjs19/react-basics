@@ -1,10 +1,15 @@
 import ListItem from "./ListItem";
 
-const ListItems = ({ listItems, onDeleteItem }) => {
+const ListItems = ({ listItems, onPackedItem, onDeleteItem }) => {
   return (
     <ul className="list-items">
       {listItems.map((item) => (
-        <ListItem key={item} item={item} onDeleteItem={onDeleteItem} />
+        <ListItem
+          key={item.name}
+          item={item}
+          onPackedItem={onPackedItem}
+          onDeleteItem={onDeleteItem}
+        />
       ))}
     </ul>
   );
