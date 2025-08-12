@@ -4,6 +4,8 @@ This is a basic React app for creating and managing a shopping list! 📝 It's p
 
 ## 📷 Screenshot
 
+![Screenshot of Simple Image Gallery](./src/assets/screenshot.png)
+
 ## ✨ Features
 
 - **Add Items**: Quickly add new items to your list. No empty items allowed! 🚫
