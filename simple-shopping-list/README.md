@@ -2,6 +2,8 @@
 
 This is a basic React app for creating and managing a shopping list! 📝 It's perfect for keeping track of your groceries or things you need to buy. All your items are saved in your browser's local storage, so your list stays put even if you close the tab.
 
+## 📷 Screenshot
+
 ## ✨ Features
 
 - **Add Items**: Quickly add new items to your list. No empty items allowed! 🚫
