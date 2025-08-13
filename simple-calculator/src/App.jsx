@@ -2,7 +2,7 @@ import Calculator from "./components/Calculator";
 
 const App = () => {
   return (
-    <main class="app">
+    <main className="app">
       <Calculator />
     </main>
   );
