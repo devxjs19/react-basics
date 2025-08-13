@@ -8,7 +8,14 @@
 
 :root {
   --bg-display: #dce2eb;
-  /* -- */
+  --bg-button-grid: #fff;
+  --number: #454748;
+}
+
+.dark-mode {
+  --bg-display: rgb(10, 34, 53);
+  --bg-button-grid: rgb(11, 46, 71);
+  --number: #fff;
 }
 
 html {
@@ -61,7 +68,7 @@ h1 {
 .buttons {
   display: grid;
   gap: 1rem;
-  background: #fff;
+  background: var(--bg-button-grid);
   padding: 2rem 2rem 4rem;
   border-radius: 0 0 24px 24px;
 }
@@ -89,7 +96,7 @@ h1 {
 }
 
 .btn.number {
-  color: #454748;
+  color: var(--number);
 }
 
 .btn.equals {
