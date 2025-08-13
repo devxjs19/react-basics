@@ -1,11 +1,11 @@
 import Display from "./Display";
-import Button from "./Button";
+import ButtonGrid from "./ButtonGrid";
 
 const Calculator = () => {
   return (
     <div className="calculator">
       <Display />
-      <Button />
+      <ButtonGrid />
     </div>
   );
 };
